@@ -1,9 +1,9 @@
 import { PageViewActivity, service } from "typescene";
-import { FeedbackService } from "../../services/FeedbackService";
-import { FormActivity } from "../form/activity";
+import FeedbackService from "../../services/FeedbackService";
+import FormActivity from "../form/activity";
 import view from "./view";
 
-export class MainActivity extends PageViewActivity.with(view) {
+export default class MainActivity extends PageViewActivity.with(view) {
     path = "/";
 
     @service("App.Feedback")

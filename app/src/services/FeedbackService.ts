@@ -1,6 +1,6 @@
 import { CHANGE, ManagedService } from "typescene";
 
-export class FeedbackService extends ManagedService {
+export default class FeedbackService extends ManagedService {
     name = "App.Feedback";
 
     /** True if feedback has been submitted */

@@ -1,8 +1,8 @@
 import { DialogViewActivity, ManagedRecord, service } from "typescene";
-import { FeedbackService } from "../../services/FeedbackService";
+import FeedbackService from "../../services/FeedbackService";
 import view, { OPT_FIELDS } from "./view";
 
-export class FormActivity extends DialogViewActivity.with(view) {
+export default class FormActivity extends DialogViewActivity.with(view) {
     @service("App.Feedback")
     feedbackService!: FeedbackService;
 

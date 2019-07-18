@@ -1,6 +1,6 @@
 import { BrowserApplication } from "@typescene/webapp";
-import { MainActivity } from "./activities/main/activity";
-import { FeedbackService } from "./services/FeedbackService";
+import MainActivity from "./activities/main/activity";
+import FeedbackService from "./services/FeedbackService";
 
 // start an instance of the feedback service
 new FeedbackService().register();
